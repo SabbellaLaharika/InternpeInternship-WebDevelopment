@@ -1,0 +1,48 @@
+'<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<div class = "container">
+		<div class = "calculator-dark"> 
+			<div class = "theme-toggler active">
+				<i class = "toggler-icon"></i>
+			</div>
+			<div class = "display-screen">
+				<div id = "display"> </div>
+			</div>
+			<div class = "calculator">
+				<input type="text" placeholder="0" id = "output-screen">
+				<button onclick="Clear()" class = "clear"><b> AC </b></button>
+				<button onclick="del()" class = "delete"><b> DEL </b></button>
+				<button onclick="display('%')" class="op"><b> % </b></button>
+				<button onclick="display('/')" class="op"><b> / </b></button>
+				<button onclick="display('7')">7</button>
+				<button onclick="display('8')">8</button>
+				<button onclick="display('9')">9</button>
+				<button onclick="display('*')" class="op"><b> * </b></button>
+				<button onclick="display('4')">4</button>
+				<button onclick="display('5')">5</button>
+				<button onclick="display('6')">6</button>
+				<button onclick="display('-')" class="op"><b> - </b></button>
+				<button onclick="display('1')">1</button>
+				<button onclick="display('2')">2</button>
+				<button onclick="display('3')">3</button>
+				<button onclick="display('+')" class="op"><b> + </b></button>
+				<button onclick="display('0')">0</button>
+				<button onclick="display('.')">.</button>
+				<button onclick="Calculate()" class="equal"><b> = </b></button>
+			</div>
+		</div>
+	</div>
+	<script src = "Script.js"></script>
+</body>
+</html>
